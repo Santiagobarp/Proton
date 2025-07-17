@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: 'SF Pro Display'; src: url('../Fonts/SF-Pro-Display-Regular.woff2');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* PARA HACER UNA VARIABLE ES CON -- , ESA VARIABLE SOLO SERIA PARA .BOX Y SUS HIJOS*/
+.box {
+    color: #000000;
+    width: 600px;
+    margin: 50px auto;
+    padding: 0 40px;
+    border: 6px solid #000;
+    font-size: clamp(2.4rem, 2vw, 4rem);
+    width: calc(50% + 500px);
+}
+
+.box:first-child {
+    height: 100px;
+}
+
+.box:nth-child(2) {
+    height: calc(100vh - 200px);
+    overflow: auto;
+}

@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* rtl SIGNIFICA LEFT TO RIGHT O LO CONTRARIO Y ESTO ES PARA LENGUAJES COMO EL ARABE */
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+}
+
+.flex-item {
+    width: 150px;
+    background-color: #911;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.flex-item:first-child {
+    background-color: #d56;
+}
+
+.flex-item:last-child {
+    background-color: rgb(24, 70, 117);
+}

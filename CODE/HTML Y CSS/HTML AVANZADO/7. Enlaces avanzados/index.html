@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form> 
+        <h2>
+            Formulario de contacto
+        </h2>
+
+        <!--SIMPLE INPUTS-->
+        <fieldset>
+            <legend>INFORMACIÓN BÁSICA</legend>
+            <div class="form_input">
+                <label>Nombre completo
+                    <input type="text" placeholder="Santiago Barragan Pinzon" id="nombre">
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Email
+                    <input type="email" placeholder="ejemplo@gmail.com" id="email">
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Asunto
+                    <input type="text" placeholder="El asunto de su mensaje" id="asunto">
+                </label>
+            </div>
+        </fieldset>
+
+        <!--SELECT & OPTIONS-->
+        <div class="form_input">
+            <label>Tipo de usuario
+                <select name="type-of-user">
+                    <option value="user1">Seguidor</option>
+                    <option value="user2">Empresa</option>
+                    <option value="user3">Otros</option>
+                </select>
+            </label>
+        </div>
+
+        <!--DATALIST & OPTIONS-->
+        <div class="form_input">
+            <label>Referencia
+                <input list="referente" name="referente">
+                <datalist id="referente" name="type-of-user">
+                    <option value="Un amigo"></option>
+                    <option value="Web"></option>
+                    <option value="Redes sociales"></option>
+                </datalist>
+            </label>
+        </div>
+
+        <!--TEXTAREA-->
+        <div class="form_input">
+            <label>Mensaje
+                <textarea rows="10" placeholder="Deja tus comentarios..." id="mensaje"></textarea>
+            </label>
+        </div>
+        <div class="form_input">
+            <label>Acepto los <a href="terms.html" target="_blank">terminos y condiciones</a>
+                <input type="checkbox" class="checkbox">
+            </label>
+        </div>
+    </form>
+</body>
+</html>

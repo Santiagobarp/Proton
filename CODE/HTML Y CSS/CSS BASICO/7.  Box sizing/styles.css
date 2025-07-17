@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    background: white;
+}
+
+.box-default {
+    background: hsl(210, 39%, 85%);
+    margin: 10px;
+    width: 50px;
+    text-align: center;
+    color: hsl(210, 45%, 40%);
+    margin-top: 20px;
+    padding: 20px 50px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 2px solid hsl(210, 45%, 40%);
+    border-radius: 10px;
+}
+
+.box-new {
+    background: hsl(210, 39%, 48%);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}

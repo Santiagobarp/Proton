@@ -1,0 +1,38 @@
+body {
+    margin: o;
+    font-family: sans-serif;
+}
+
+body, div {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+    margin: auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    max-width: 100%;
+    border-radius: 16px;
+}
+
+/* EL GRID STAR DE ROW Y COLUM ASI COMO EL END ES PARA ASIGNAR EN EL QUE NUMERO DE COLUMAN DEBE DE EMPEZAR Y TERMINAR EL ROW Y COLUMN 
+
+SPAN SIRVE PARA DARLE UNA MEDIDA FIJA AL LIMITE PERO PUEDES CAMBIAR DESDE DONDE EMPIEZA */
+.grid-item:first-child {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column-end: span 2;
+}
+
+.grid-item:hover {
+    opacity: 0.74;
+}

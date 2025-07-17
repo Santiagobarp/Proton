@@ -1,0 +1,109 @@
+h1 {
+    color: aqua;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+/* CUANDO PASAMOS EL MOUSE POR ENCIMA DEL ELEMTO */
+h1:hover {
+    background-color: black;
+    color: brown;
+}
+
+/* CUANDO CLICKEAMOS EL ELEMTO */
+h1:active {
+    background-color: greenyellow;
+    color: black;
+}
+
+/* SELECCIONANDO EL PRIMER LI */
+li:first-child {
+    color: red;
+}
+
+/* SELECCIONANDO EL ULTIMO LI */
+li:last-child {
+    color: blue;
+}
+
+/* SELECCIONANDO CULAQUIER LI */
+li:nth-child(2) {
+    color: green;
+}
+
+/* SELECCIONANDO IMPARES LI iNLCUSO PARA TABLAS*/
+li:nth-child(2n) {
+    color: goldenrod;
+    background-color: grey;
+    border: 1px solid #000;
+}
+
+/* SELECCION PARA EXCLUIR*/
+.lista li:not(.excluir) {
+    color: goldenrod;
+    background-color: grey;
+    border: 1px solid #000;
+}
+
+/* :empty SIRVE PARA QUE EN CASO DE QUE EL TEXTO SE HAYA BORRADO O ALGO NO QUEDE EL BORDE VOLANDO SI NO QUE SE BORRE LO QUE HAYA QUEDADO*/
+div {
+    color: goldenrod;
+    background-color: grey;
+    border: 1px solid #000;
+}
+
+div:empty {
+    border: none;
+}
+
+/* SELECCIONANDO ENLANCES NO VISITADOS */
+a:link {
+    color: violet;
+}
+
+/* SELECCIONANDO ENLANCES VISITADOS */
+a:visited {
+    color: green;
+}
+
+/* INPUT INVALIDO */
+input:invalid {
+    color: red;
+}
+
+/* INPUT VALIDOS */
+input:valid {
+    color: green;
+}
+
+/* EL USO DE IS (ESPECIFICIDAD 0,1,1), WHERE (ESPECIFICIDAD 0,0,1) ES MAS ORDENADO */
+.elemento1,
+.elemento2,
+.elemento3 {
+    color: blue;
+}
+
+:is(.elemento1, .elemento2, .elemento3 ) {
+    color: blue;
+}
+
+:where(.elemento1, .elemento2, .elemento3 ) {
+    color: blue;
+}
+
+/* EL USO DE HAS ES PARA INDICAR QUE ALGO SE LE TIENE QUE APLICAR UNA PROPIEDAD SI X ESTA CONTENIDO EN Y (X:HAS(+DIV)) CON UL + DIV SE MODIFICA EL DIV, PERO CON EL OTRO SOLO EL UL*/
+
+ul:has(+div) {
+    background-color: blueviolet;
+}
+
+/* HAS TAMBIEN SIRVE PARA DARLE UNA PROPIEDAD A ELEMTOS ADYACENTES*/
+
+label:has(input:valid), input:valid {
+    color: green;
+}
+
+label:has(input:invalid) {
+    color:red;
+}
+

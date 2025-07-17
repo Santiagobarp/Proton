@@ -1,0 +1,35 @@
+body {
+    margin: o;
+    font-family: sans-serif;
+}
+
+body, div {
+    box-sizing: border-box;
+}
+
+/* EL GRID AUTO FLOW DENSE SIRVE PARA QUE LOS ESPACIOS EN BLANCO QUE QUEDEN POR AMPLIAR O HACER MAS GRANDE UN GRID ITEM SE ADAPTEN PARA QUE NO QUEDEN ESOS ESPACIOS EN BLANCO */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-auto-rows: 1fr;
+    grid-auto-flow: dense;
+    grid-auto-columns: 1fr;
+    margin: auto;
+    gap: 10px;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+.grid-item {
+    max-width: 100%;
+    border-radius: 16px;
+    font-size: 30px;
+    background-image: url(naturaleza.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.grid-item:hover {
+    opacity: 0.74;
+}

@@ -1,0 +1,15 @@
+/* LA HERENCIA INDICA QUE TODA LA DESENCENCIA TENDRA LOS ATRIBUTOS IMPUESTOS*/
+body {
+    color: aqua;
+    font-family: sans-serif;
+}
+
+/* HASTA QUE SE CAMBIA DIRECTAMENTE */
+h1 {
+    color: red;
+    font-family: ;
+}
+
+/* HAY COSAS QUE NO SE HEREDAN, SI QUIERO QUE SE HEREDE TENGO QUE USAR inherit */
+
+

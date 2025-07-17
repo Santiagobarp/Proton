@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    --bg-color: #c8c8c8;
+    --text-color: #000;
+    --faq-color: #ffffff;
+    --dark-color: #a5a5a5;
+}
+
+body,div,ul,li,a,h1,h2,h3,h4,p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.faq {
+    max-width: clamp(300px,70%,700px);
+    margin: auto;
+}
+
+details {
+    background-color: var(--faq-color);
+    margin: 7px;
+    padding: 7px;
+    max-height: 34px;
+    transition: max-height 2s;
+    overflow: hidden;
+    display: block;
+}
+
+details[open] {
+    max-height: 400px;
+}
+
+details[open] .content {
+    animation: aparecer 1s .3s both;
+}
+
+.content {
+    padding: 5px 10px;
+    padding-top: 5px;
+    margin: 10px;
+    margin-bottom: 0;
+    border-top: 1px solid var(--bg-color);
+    font-size: .8rem;
+}
+
+summary {
+    user-select: none;
+    position: relative;
+}
+
+summary::marker {
+    content: '';
+}
+
+summary::before {
+    content: '+';
+    color: var(--bg-color);
+    position: absolute;
+    right: 0;
+}
+
+details[open] summary::before {
+    content: '-';
+}
+
+details b {
+    background-color: var(--dark-color);
+    padding: 1px 3px;
+    color: #fff;
+}
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

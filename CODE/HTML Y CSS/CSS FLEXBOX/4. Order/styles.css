@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #eee;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid #000;
+    margin: 20px;
+    background-color: #fff;
+    justify-content: space-evenly;
+}
+
+/* ORDER SE UTILIZA PARA DARLE EL ORDEN QUE VA A TENER, ES DECIR SI VA A SER EL PRIMERO, SEGUNDO O EL NUMERO QUE SE LE QUIERAN ASIGNAR A LOS ELEMENTOS */
+.flex-item {
+    width: 100px;
+    background-color: #911;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    order: 1;
+}
+
+.flex-item:first-child {
+    background-color: #d56;
+    order: 3;
+}
+
+.flex-item:last-child {
+    background-color: rgb(24, 70, 117);
+    order: 2;
+}
+
+.box--2 {
+    flex-wrap: wrap;
+}

@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #eee;
+}
+
+/* EL OUTLINE ES UN BORDE QUE NO OCUPA ESPASIO PERO ES UNA PROPIEDAD DE CAJA YA QUE VISUALMENTE SE VE PERO NO ALTERA EL ESPACIO EN PROPORCION */
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    margin: auto;
+    margin-top: 50px;
+    border: 2px solid greenyellow;
+    outline-color: blueviolet;
+    outline-style: solid;
+    outline-width: 5px;
+    outline-offset: 10px;
+}
+
+.box-2 {
+    outline: 5px solid grey ;
+}
+
+.box:hover {
+    outline: 5px solid grey ;
+}
+
+input {
+    margin: 50px;
+}

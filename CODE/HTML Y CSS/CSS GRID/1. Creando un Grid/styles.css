@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* LA FUNCION DE GRID TEMPLATE COLUMNS ES PARA QUE CON CADA DATO QUE PONES AGREGAR UNA COLUMAN, YO PUSE 3 VECES 200PX ESO SIGNIFICA QUE VAN HABER 3 COLUMNAS */
+.grid {
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    grid-template-rows: 100px 400px;
+}
+
+.grid-item {
+    background-color: #ccc;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}

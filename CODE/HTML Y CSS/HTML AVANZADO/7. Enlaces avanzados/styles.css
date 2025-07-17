@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    color: #eee;
+    background-color:#222 ;
+}
+
+h2 {
+    text-align: center;
+    font-family: sans-serif;
+    margin: o;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+input, textarea, select {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: none;
+    border: 1px solid #666;
+    box-shadow: 0 0 30px #0006;
+    background-color: transparent;
+    border-radius: 4px;
+    color: #666;
+    resize: vertical;
+}
+
+option {
+    background-color: #222;
+}
+
+select {
+    appearance: none;
+    background-color: #222;
+    color: #ddd;
+}
+
+
+form {
+    background-color: transparent;
+    padding: 20px 0;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 55px #fff1;
+    margin-top: 50px;
+    border-radius: 8px;
+    font-family: sans-serif;
+}
+
+
+.form_input {
+    padding: 10px 20px;
+}
+
+textarea {
+    min-width: 100%;
+    min-height: 100px;
+    max-width: 200px;
+    resize: none;
+    font-family: sans-serif;
+}
+
+label {
+    font-size: 0.85em;
+    line-height: 2;
+    color: #ddd;
+}
+
+.checkbox {
+    width: auto;
+    
+}
+
+fieldset {
+    border-radius: 6px;
+    margin: 20px 20px;
+    border: 1px solid #666;
+    color: #666;
+}
+
+a {
+    color:  #48e;
+    text-decoration: none;
+}

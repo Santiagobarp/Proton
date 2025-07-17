@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: sans-serif
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+/* FORMA CORRECTA DE HACERLO CON FLEX */
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    background-color: #ccc;
+    padding: 30px;
+    border: 1px solid #000;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 200px;
+}
+
+/* FORMA DE HACERLO CON QUERIES*/
+@media screen and (max-width:500px){
+    body {
+        font-size: 30px;
+        background-color: #000;
+        color: #fff;
+    }
+    .flexbox {
+        flex-direction: column;
+    }
+}
+
+@media print {
+    body {
+        font-size: 12pt;
+    }
+}
+

@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #aaa;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #000;
+    margin: 20px;
+    background-color: #fff;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+/* FLEX GROW DETERMINA QUE RELACION DE TAMANO VA A TENER CON RELACION A LA QUE TANTO CRECE LA PESTANA, PUEDES HACER QUE LA CAJA 1 TENGA MAS ESPACIO QUE CAJA 2 O QUE TODAS ESTEN EN 1 ENTONCES SIGNIFICA QUE COMO HAY 3 DE 1 EL TAMANO TOTAL ES 3.
+
+FLEX-SHRINK POR OTRA ES LA RELACION PERO AHORA CON RELACION A CUANTO SE ENCOGE CUANDO LA PESTANA SE HACE MAS CHIQUITA
+
+FLEX-BASIS SIRVE PARA DARLE EL TAMANO MINIMO CON PX
+*/
+.flex-item {
+    width: 100px;
+    background-color: #911;
+    text-align: center;
+    font-size: 30px;
+    flex: 1 1 100px
+
+}
+
+.flex-item:nth-child(2n) {
+    background-color: beige;
+}

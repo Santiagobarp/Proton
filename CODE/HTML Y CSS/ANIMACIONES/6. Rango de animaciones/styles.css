@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: 'SF Pro Display'; src: url('./Fonts/SF-Pro-Display-Regular.woff2') format('woff2');
+    background-color: #989797;
+    height: 200vh;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.crecedor {
+    height: 200vh;
+}
+
+.container {
+    scroll-timeline: --cajita ;
+    height: 50vh;
+}
+
+.box {
+    view-timeline: --cajita block;
+    background-color: #fff;
+    padding: 20px;
+    animation: llenar-barra both;
+    animation-timeline: --cajita;
+    animation-timing-function: linear;
+    animation-range-start: contain 10%;
+    animation-range-end: contain 100%;
+}
+
+.barra {
+    padding: 40px;
+    background-color: #dedede;
+    border-radius: 30px;
+    width: 10%;
+    animation-name: llenar-barra;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-timeline: --containerScroll;
+}
+
+
+@keyframes llenar-barra {
+    from {
+        width: 0%;
+        background-color: #fff;
+    }
+
+    to {
+        width: 100%;
+    }
+}

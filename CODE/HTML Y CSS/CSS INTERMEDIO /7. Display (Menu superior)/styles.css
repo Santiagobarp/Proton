@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+}
+
+/* EL DISPLAY SIRVE PARA CONVERTIR UN ELEMTO EN BLOQUE EN CASO DE QUE NO LO SEA COMO ES EL CASO DE a */
+/* a {
+    background-color: #000;
+    color: white;
+    border: 1px solid #000;
+    display: block;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* EL DISPLAY TAMBIEN SIRVE PARA ALINEAR DE LA MISMA ALTURA, P YA ES BLOCK*/
+
+p {
+    background-color: #000;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* EL DISPLAY DE INLINE ALINEA LAS COSAS PERO PIERDEN LA PROPIEDAD DE BLOQUES, PERO CON INLINE BLOCK SON BLOQUES ALINEADOS */
+
+.nav {
+    background-color: #785943;
+    text-align: center;
+}
+
+.nav__list {
+    margin: 0;
+}
+
+.nav__item {
+    display: inline-block;
+    padding: 10px;
+    background-color: #785943;
+    font-family: sans-serif;
+}
+
+.nav__link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav__item:hover {
+    background-color: #907d70;
+}
+
+.link--buton {
+    border: 1px solid white;
+    background-color: #fff ;
+    padding: 4px 18px;
+    color: #785943;
+    border-radius: 3px;
+    margin-left: 12px;
+}
+
+.link--buton:hover {
+    background-color: transparent;
+    color: white;
+}

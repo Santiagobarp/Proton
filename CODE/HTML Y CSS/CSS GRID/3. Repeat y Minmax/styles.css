@@ -1,0 +1,46 @@
+body { 
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* LA FUNCION REPEAT ES PARA NO TENER QUE ESCRIBIR VARIAS VECES ALG, TAMBIEN SIRVE PARA PARA PATRONES, MINMAX SE PONE PARA LA COLUMNA O LA FILA ENTERA Y EN SI ES PARA PONER EL VALOR MINIMO Y MAXIMO QUE QUEREMOS QUE MIDA LA COLUMNA O FILA */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,2fr) 4fr;
+    grid-template-rows: 300px 200px;
+    border: 2px solid #000;
+}
+
+.grid-item {
+    background-color: #ccc;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.grid-dos {
+    display: grid;
+    grid-template-columns: 100px 100px minmax(200px, 400px);
+    grid-template-rows: 2fr 1fr 1fr;
+    background-color: #fff;
+    margin-top: 50px;
+    border: 2px solid #000;
+}
+
+.item-2 {
+    background-color: #4aada2;
+}
+
+.grid-tres {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px,200px));
+    grid-template-rows: 2fr 1fr 1fr;
+    background-color: #fff;
+    margin-top: 50px;
+    border: 2px solid #4aada2;
+}
+
+.item-3 {
+    background-color: #3266a6;
+}

@@ -1,0 +1,32 @@
+body { 
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* WRAP SON LOS SALTON DE LINEA, SE PUEDE PONER PARA QUE NO SE PUEDA CON NOWRAP */
+.flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid #000;
+    margin: 20px;
+}
+
+.flex-item {
+    width: 100px;
+    background-color: #911;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.flex-item:first-child {
+    background-color: #d56;
+}
+
+.flex-item:last-child {
+    background-color: rgb(24, 70, 117);
+}
+
+.box--2 {
+    flex-wrap: wrap;
+}

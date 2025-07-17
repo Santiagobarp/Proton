@@ -1,0 +1,25 @@
+/* SELECTOR POR ATRIBUTO */
+img[src="Copia de Napoleon.jpg"] {
+    width: 100%;
+}
+
+
+/* SELECTOR DESCENDIENTE*/
+ul li {
+    color: grey
+}
+
+/* SELECTOR DESCENDIENTE*/
+li > strong {
+    color: red;
+}
+
+/* SELECTOR ADYACENTE */
+h3 + p + p{
+    color:green
+}
+
+/* SELECTOR  MULTIPLE*/
+h1, h2 {
+    color: blueviolet;
+}

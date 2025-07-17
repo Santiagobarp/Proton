@@ -1,0 +1,47 @@
+body { 
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* EL GRIP QUE NO SE ASIGNA SE DEBE DE DE PONER LA PROPIEDAD GRID AUTO ROW Y ASIGNAR LA MEDIDA QUE VAN A TENER EN AUTOMATICO LAS QUE NO SE ASIGNEN, GRID AUTO FLOW ES PARA QUE LO NUEVO QUE SE CREE SEA PARA NUEVAS COLUMNAS Y EL GRID AUTO COLUM SE ASIGNA PARA QUE TENGAN UNA MEDIDA ESTANDAR QUE ASIGNAS*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,2fr) 4fr;
+    grid-template-rows: 300px 200px;
+    border: 2px solid #000;
+    grid-auto-rows: 300px;
+}
+
+.grid-item {
+    background-color: #ccc;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.grid-dos {
+    display: grid;
+    grid-template-columns: 100px 100px minmax(200px, 400px);
+    grid-template-rows: 2fr 1fr 1fr;
+    background-color: #fff;
+    margin-top: 50px;
+    border: 2px solid #000;
+}
+
+.item-2 {
+    background-color: #4aada2;
+}
+
+.grid-tres {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px,200px));
+    grid-template-rows: 2fr 1fr 1fr;
+    background-color: #fff;
+    margin-top: 50px;
+    border: 2px solid #4aada2;
+}
+
+.item-3 {
+    background-color: #3266a6;
+}
