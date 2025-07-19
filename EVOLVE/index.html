@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVOLVE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__logo-container">
+            <img class="header__logo" src="EVOLVE1.png" alt="">
+        </div>
+        <div class="header__nav-container">
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#">Inicio</a></li>
+                    <li class="header__nav-item"><a href="#">Habitos</a></li>
+                    <li class="header__nav-item"><a href="#">Adicciones</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__login">
+            <a href="#">Log in</a>
+        </div>
+    </header>
+
+    <!-- VIEW -->
+    
+    <div class="view">
+        <nav class="view__nav">
+            <ul class="view__nav-list">
+            <li class="view__nav-item-1">
+                <a href="#" class="view__nav-item view__nav-item--1 active">
+                    <span class="material-symbols-outlined">local_florist</span>
+                    Suma
+                </a>
+            </li>
+            <li class="view__nav-item-2">
+                <a href="#" class="view__nav-item view__nav-item--2">
+                    <span class="material-symbols-outlined">psychology</span>
+                    Resta
+                    </a>
+            </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- TITLE -->
+    <div class="title__container">
+        <h1 class="title">Evoluciona hacia tus objetivos
+
+        </h1>
+        <p class="description__section">
+            Personaliza tu espacio de evolución.
+        </p>
+    </div>
+
+    <!-- SUB TITLE -->
+    <div class="subtitle__container">
+        <h1 class="subtitle"> <span>Suma</span> hacia tus objetivos
+        </h1>
+        <p class="description__section">
+            Agrega y edita tus adicciones.
+        </p>
+    </div>
+
+    <!-- SECTIONS -->
+    <!-- SECTIONS -->
+    <div class="grid-container">
+    <div class="grid-item" id="alcohol">
+        <button class="collapse-btn" id="collapse-alcohol">˅</button>
+        <h3 class="grid-title">Despertarse temprano</h3>
+        <div class="inner-grid" id="alcohol-inner-grid" style="display: none;">
+        <div class="inner-grid-item add-gadget">+</div>
+        </div>
+    </div>
+    <div class="grid-item add-section">+</div>
+    </div>
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
