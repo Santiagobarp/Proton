@@ -335,9 +335,8 @@ h2 {
 }
 
 .portfolio__project {
-    background-image: linear-gradient(#0009, #0009) ,url("SBP.JPG");
-    background-position: center;
-    background-size: cover;
+    position: relative;
+    overflow: hidden;
     display: grid;
     place-content: center;
     border-radius: 10px;
@@ -347,13 +346,33 @@ h2 {
     animation-range: contain 0% cover 40%;
 }
 
-.portfolio__project-name {
-    margin: 0;
+.portfolio__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    filter: brightness(0.6); /* opcional para overlay */
+}
+
+.portfolio__project-name a {
+    position: relative;
+    z-index: 1;
+    color: white;
 }
 
 .portfolio__project:hover {
     opacity: 0.74;
     outline: 2px solid #fff6;
+}
+
+.portfolio__description {
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 

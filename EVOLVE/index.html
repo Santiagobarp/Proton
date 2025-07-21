@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,18 +33,18 @@
     <div class="view">
         <nav class="view__nav">
             <ul class="view__nav-list">
-            <li class="view__nav-item-1">
-                <a href="#" class="view__nav-item view__nav-item--1 active">
-                    <span class="material-symbols-outlined">local_florist</span>
-                    Suma
-                </a>
-            </li>
-            <li class="view__nav-item-2">
-                <a href="#" class="view__nav-item view__nav-item--2">
-                    <span class="material-symbols-outlined">psychology</span>
-                    Resta
+                <li class="view__nav-item-1">
+                    <a href="#" class="view__nav-item view__nav-item--1 active">
+                        <span class="material-symbols-outlined">local_florist</span>
+                        Suma
                     </a>
-            </li>
+                </li>
+                <li class="view__nav-item-2">
+                    <a href="#" class="view__nav-item view__nav-item--2">
+                        <span class="material-symbols-outlined">psychology</span>
+                        Resta
+                        </a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -55,20 +55,19 @@
 
         </h1>
         <p class="description__section">
-            Personaliza tu espacio de evolución.
+            Diseña un entorno que impulse tu transformación personal.        
         </p>
     </div>
 
     <!-- SUB TITLE -->
     <div class="subtitle__container">
-        <h1 class="subtitle"> <span>Suma</span> hacia tus objetivos
+        <h1 class="subtitle"> <span>Suma</span> hábitos que construyen
         </h1>
         <p class="description__section">
-            Agrega y edita tus adicciones.
+            Agrega y edita tus habitos.
         </p>
     </div>
 
-    <!-- SECTIONS -->
     <!-- SECTIONS -->
     <div class="grid-container">
     <div class="grid-item" id="alcohol">
@@ -81,7 +80,17 @@
     <div class="grid-item add-section">+</div>
     </div>
 
-    
+     <!-- MODAL PARA NUEVA SECCIÓN -->
+    <div class="modal" id="sectionModal">
+        <div class="modal__content">
+            <label for="sectionName">Nombre de la nueva sección:</label>
+            <input type="text" id="sectionName" />
+            <div class="modal__actions">
+                <button id="cancelBtn">Cancelar</button>
+                <button id="confirmBtn">Aceptar</button>
+            </div>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>
