@@ -585,7 +585,7 @@ h2 {
 .textarea {
     border-radius: 12px;
     font-size: 17px;
-    font-family: 'SF Pro Display';
+    font-family: 'SF Pro Display', sans-serif;
     padding: 18px 12px;
     border: 1px solid #00000071;
     background-color: transparent;
