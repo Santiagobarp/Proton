@@ -540,7 +540,7 @@ h2 {
 
 .form__title {
     color: #000;
-    font-family: 'SF Pro Display'; src: url('./Fonts/SF-Pro-Display-Semibold.woff2') format('woff2');
+    font-family: 'SF Pro Display', sans-serif;
     font-weight: 600;
     font-size: 38px;
     margin-left: 20px;
@@ -549,7 +549,7 @@ h2 {
 .form__section {
     text-align: center;
     color: #494949;
-    font-family: 'SF Pro Display'; src: url('./Fonts/SF-Pro-Display-Medium.woff2') format('woff2');
+    font-family: 'SF Pro Display', sans-serif;
     font-weight: 500;
     font-size: 26px;
 }
@@ -557,7 +557,7 @@ h2 {
 .form__input input, textarea {
     border-radius: 12px;
     font-size: 17px;
-    font-family: 'SF Pro Display'; src: url('./Fonts/SF-Pro-Display-Light.woff2') format('woff2');
+    font-family: 'SF Pro Display', sans-serif;
     padding: 18px 12px;
     border: 1px solid #00000071;
     background-color: transparent;
@@ -570,7 +570,7 @@ h2 {
 
 .select {
     font-size: 17px;
-    font-family: 'SF Pro Display';
+    font-family: 'SF Pro Display', sans-serif;
     padding: 18px 12px;
     border: 1px solid #00000071;
     border-radius: 12px;
