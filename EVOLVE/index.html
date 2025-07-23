@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>  
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -80,16 +80,21 @@
     <div class="grid-item add-section">+</div>
     </div>
 
-     <!-- MODAL PARA NUEVA SECCIÓN -->
-    <div class="modal" id="sectionModal">
-        <div class="modal__content">
-            <label for="sectionName">Nombre de la nueva sección:</label>
-            <input type="text" id="sectionName" />
-            <div class="modal__actions">
-                <button id="cancelBtn">Cancelar</button>
-                <button id="confirmBtn">Aceptar</button>
-            </div>
-        </div>
+    <!-- MODAL PARA NUEVA SECCIÓN -->
+    <div id="modal-overlay" class="modal-overlay hidden">
+    <div class="modal">
+        <button class="modal__close" onclick="closeModal()">×</button>
+        <h2 class="modal__title">Nuevo hábito</h2>
+        <p class="modal__subtitle">Escribe el nombre de tu nuevo hábito</p>
+
+        <label class="modal__label" for="habit-name">Nombre del hábito</label>
+        <input id="habit-name" class="modal__input" type="text" placeholder="Correr 5 km" />
+
+        <label class="modal__label" for="habit-desc">Descripción <span class="modal__optional">(opcional)</span></label>
+        <input id="habit-desc" class="modal__input" type="text" placeholder="..." />
+
+        <button class="modal__submit">Continuar</button>
+    </div>
     </div>
 
     <script src="app.js"></script>

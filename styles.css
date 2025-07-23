@@ -36,6 +36,7 @@ div, ul, nav, header, footer, a, li, label {
     z-index: 10;
     text-align: center;
     font-size: 16px;
+    font-weight: 400;
     color: #000;
 }
 
@@ -87,10 +88,15 @@ div, ul, nav, header, footer, a, li, label {
 .header__nav-item a {
     color: inherit;
     text-decoration: none;
+    position: relative;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .header__nav-item a:hover {
-    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.06);
+    color: #000;
 }
 
 
@@ -165,15 +171,39 @@ div, ul, nav, header, footer, a, li, label {
     container-type: inline-size;
     background-color: #f3f3f6;
     animation: aparecer 2.4s -.6s both;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+.presentation__name {
+    font-size: 36px;
+    margin-bottom: 2px;
+    margin-top: 0px;
+    font-weight: 600;
+}
+
+span {
+    font-size: 16px;
+    margin-top: 0px;
+    font-weight: 600;
+    margin-bottom: 40px;
 }
 
 .profile__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto;
+    margin-top: 0px;
     background-color: #f3f3f6;
     max-width: 1400px;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+.profile__description p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    font-family: 'SF Pro Display', sans-serif;
 }
 
 .profile__data-container {
@@ -181,13 +211,17 @@ div, ul, nav, header, footer, a, li, label {
     padding: 30px;
     background-color: #fff;
     border-radius: 10px;
-    margin: 30px;
+    margin: 20px 15px;
+    flex: 1;
+    display: flex;
 }
 
 .profile__img-container {
+    flex: 1;
+    display: flex;
     max-width: 500px;
     border-radius: 10px;
-    margin: 30px;
+    margin: 0px 15px;
 }
 
 .profile__img {
@@ -196,61 +230,114 @@ div, ul, nav, header, footer, a, li, label {
     border-radius: 10px;
 }
 
-.profile__skill {
-    list-style: none;
-    display: flex;
-    margin: 10px;
-    max-width: 600px;
-    margin-left: 0;
-    align-items: center;
-}
-
-.load-bar {
-    border: 2px solid #000;
-    border-radius: 8px;
-    color: #fff;
-    padding: 2px;
-    font-size: 12px;
-    width: 80%;
-    margin: 4px;
-    margin-left: 0;
-}
-
-.load-bar__bar {
-    background-color: #000;
-    border-radius: 4px;
-    padding: 4px 6px;
-}
-
-.bar--90 {
-    width: 90%;
-}
-
-.bar--80 {
-    width: 80%;
-}
-
-.bar--70 {
-    width: 70%;
-}
-
-.bar--60 {
-    width: 60%;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+    color: #111;
 }
 
 h1 {
-    font-family: 'SF Pro Display'; src: url('./Fonts/SF-Pro-Display-Semibold.woff2') format('woff2');
     font-size: 26px;
-    font-weight: 600;
     margin-bottom: 30px;
-    margin-top: 0;
 }
 
 h2 {
-    font-family: 'SF Pro Display'; src: url('./Fonts/SF-Pro-Display-Medium.woff2') format('woff2');
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 26px;
     margin-top: 35px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.skill-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #eaeaea;
+    border-radius: 8px;
+    color: #333;
+    transition: transform 0.2s;
+    white-space: nowrap;
+}
+
+.skill-pill:hover {
+    transform: scale(1.05);
+}
+
+.skill-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.profile__edu-exp-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px 15px;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+.profile__column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.profile__divider {
+    width: 1px;
+    background-color: #ddd;
+    margin: 0 20px;
+}
+
+.edu__item {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+.experience__item {
+    margin-bottom: 30px;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+.experience__item .edu__item {
+    margin: 4px 0;
+    font-weight: 500;
+    color: #333;
+}
+
+.experience__list {
+    padding-left: 18px;
+    margin: 8px 0 0;
+    color: #444;
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+.experience__date {
+    float: right;
+    font-weight: normal;
+    color: #888;
+    font-size: 14px;
+    font-family: 'SF Pro Display', sans-serif;
 }
 
 
@@ -259,29 +346,57 @@ h2 {
 @container profile (min-width: 56.25rem) {
     .profile__wrapper {
         flex-direction: row;
-        padding: 20px;
-        background-color: transparent;
+        align-items: stretch;
+        padding: 40px 40px 80px;
+        margin: 0 auto;
+        gap: 10px 40px;
     }
 
+    .profile__img-container,
     .profile__data-container {
-        background-color: #fff;
+        flex: 1;
+        margin: 0;
         display: flex;
-        align-items: center;
-    }
-
-    .profile__data {
-        max-width: 720px;
+        flex-direction: column;
     }
 
     .profile__img {
-        height: 85vh;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
-        width: 620px;
+        border-radius: 10px;
     }
 
-    .profile__skills {
-        height: 80vh;
-        margin: 0;
+    .profile__data-container {
+        justify-content: center;
+    }
+
+    .profile__data {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile__edu-exp-container {
+        margin: 0px 60px 40px ;
+        gap: 60px;
+        padding: 40px 60px;
+    }
+
+    .profile__divider {
+        margin: 0 40px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .profile__edu-exp-container {
+        flex-direction: column;
+    }
+
+    .profile__divider {
+        width: 100%;
+        height: 1px;
+        margin: 20px 0;
     }
 }
 
@@ -304,75 +419,75 @@ h2 {
 
 .portfolio {
     background-color: #fff;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    padding: 60px 20px;
     text-align: center;
-    color: #fff;
-    container-name: portfolio;
-    container-type: inline-size;
-    margin: auto;
-    justify-content: space-evenly;
+    font-family: 'SF Pro Display', sans-serif;
 }
 
 .portfolio__title {
-    font-family: 'SF Pro Display'; src: url('./Fonts/SF-Pro-Display-Semibold.woff2') format('woff2');
-    font-weight: 600;
     font-size: 38px;
+    font-weight: 600;
     color: #000;
-    margin-bottom: 0;
+    margin-bottom: 40px;
 }
 
 .portfolio__project-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 1300px;
-    margin: auto;
-    width: 100%;
-    gap: 12px;
+    display: flex;
+    justify-content: center;
     padding: 12px;
-    min-height: 80vh;
 }
 
-.portfolio__project {
+.portfolio__project-card {
     position: relative;
-    overflow: hidden;
-    display: grid;
-    place-content: center;
-    border-radius: 10px;
-    margin: 0;
-    animation: aparecer both;
-    animation-timeline: view();
-    animation-range: contain 0% cover 40%;
-}
-
-.portfolio__img {
-    position: absolute;
+    max-width: 600px;
     width: 100%;
-    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio__project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio__card-img {
+    width: 100%;
+    height: 300px;
     object-fit: cover;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    filter: brightness(0.6); /* opcional para overlay */
+    display: block;
 }
 
-.portfolio__project-name a {
-    position: relative;
-    z-index: 1;
-    color: white;
+.portfolio__card-content {
+    padding: 24px;
+    text-align: left;
+    background: #f1f1f2;
 }
 
-.portfolio__project:hover {
-    opacity: 0.74;
-    outline: 2px solid #fff6;
+.portfolio__card-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 8px;
 }
 
-.portfolio__description {
-    position: relative;
-    z-index: 1;
-    font-size: 18px;
-    font-weight: 300;
+.portfolio__card-title a {
+    text-decoration: none;
+    color: #111;
+}
+
+.portfolio__card-title a:hover {
+    text-decoration: underline;
+}
+
+.portfolio__card-description {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: 'SF Pro Display', sans-serif;
 }
 
 
